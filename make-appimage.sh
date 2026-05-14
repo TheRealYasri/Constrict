@@ -14,11 +14,12 @@ export DEPLOY_PYTHON=1
 # Deploy dependencies
 quick-sharun \
   /usr/bin/constrict \
-  /usr/share/constrict \
+  /usr/bin/ffprobe \
+  /usr/bin/ffmpeg \
   /usr/lib/libgtk-4.so* \
   /usr/lib/libadwaita-1.so* \
-  /usr/bin/ffmpeg
-
+  /usr/share/constrict
+  
 # Turn AppDir into AppImage
 quick-sharun --make-appimage
 
