@@ -12,7 +12,12 @@ export PATH_MAPPING='/usr/share/constrict:${SHARUN_DIR}/share/constrict'
 export DEPLOY_PYTHON=1
 
 # Deploy dependencies
-quick-sharun /usr/bin/constrict /usr/lib/libgtk-4.so /usr/lib/libadwaita-1.so /usr/bin/ffmpeg
+quick-sharun \
+  /usr/bin/constrict \
+  /usr/share/constrict \
+  /usr/lib/libgtk-4.so* \
+  /usr/lib/libadwaita-1.so* \
+  /usr/bin/ffmpeg
 
 # Turn AppDir into AppImage
 quick-sharun --make-appimage
